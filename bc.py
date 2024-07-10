@@ -49,10 +49,10 @@ except:pass
 for x in range(1000):
  rr = random.randint
  rc = random.choice
- A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
- B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
- C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
- D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
+ A = f'Mozilla/5.0 (Linux; U; Android 13; fr-fr; Redmi Note 11 Build/TKQ1.'
+ B = f'{str(rr(221114.001))}.011; en-us) AppleWebKit/537.36 '
+ C = f'(KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari'
+ D = f'/537.36 XiaoMi/MiuiBrowser/13.40.2.1-gn'
  se = f'{A}{B}{C}{D}'
  if se in redmi:pass
  else:redmi.append(se)
@@ -68,7 +68,7 @@ for memk in range(10000):
     gt = ['N4LEFH','TQ2A','QQ1B','PQ1A','SQ3A','RD1B','LDK2WU','SD2A','AB03E','Z367Q','R8638','C886H'] 
     strt = f'viabrowser;Safary-Mozilla/5.0 (Windows NT 10.0 .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,500))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/{str(rr(10,400))}.0.{str(rr(111,6666))}.{str(rr(10,400))}'
     ical4 = f"viabrowser;Safary-Mozilla/5.0 (Windows NT 10.0 .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,140))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/6.0.2979.18"
-    fa5 = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+    fa5 = f'Mozilla/5.0 (Linux; U; Android 13; fr-fr; Redmi Note 11S 5G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36'
     fan = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
     fina = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,300))}.0.0.0 Mobile Safari/537.36'
     uaku2 = random.choice([strt,ical4,fa5,fan,fina])
