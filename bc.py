@@ -581,10 +581,10 @@ def p4():
             if len(nmf)<6:
                 if len(frs)<3:
                     pass
-                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234')
+                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(nmf+'1234')
             else:
                 if len(frs)<3:pwv.append(nmf)
-                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234')
+                else:pwv.append(nmf)')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:pwv.append(xpwd)
             else:pass
