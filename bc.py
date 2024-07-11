@@ -611,29 +611,43 @@ def md2(idf,pwv):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
 }
-    'viewport-width': '980',
-})
-      p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-      dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-      koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-      koki+=' m_pixel_ratio=2.625; wd=412x756'
-      headers.update({'authority':'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6',
-    'cache-control': 'max-age=0',
-    'dpr': '3',
-'sec-ch-prefers-color-scheme': 'dark',
-'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="125.0.1364.160"',
-'sec-ch-ua-mobile': '?0',
-'sec-ch-ua-model': '""',
-'sec-ch-ua-platform': '"Linux"',
-'sec-ch-ua-platform-version': '""',
-'sec-fetch-dest': 'document',
-'sec-fetch-mode': 'navigate',
-'sec-fetch-site': 'none',
-'sec-fetch-user': '?1',
-'upgrade-insecure-requests': '1',
+params = {
+    'login_attempt': '1',
+    'lwv': '101',
+}
+
+data = {
+    'jazoest': '21001',
+    'lsd': 'AVqawOott30',
+    'display': '',
+    'isprivate': '',
+    'return_session': '',
+    'skip_api_login': '',
+    'signed_next': '',
+    'trynum': '1',
+    'timezone': '-420',
+    'lgndim': 'eyJ3IjozNjAsImgiOjY0MCwiYXciOjM2MCwiYWgiOjY0MCwiYyI6MjR9',
+    'lgnrnd': '052100_inZ7',
+    'lgnjs': '1720182063',
+    'cuid': 'AYgfPxtjo7nmn3QFUxpv6HDoGFnXzru-3Z_nBJBQazLjUagWJQK4ZZka9bk2yF0eTKwrIvFXQcf0K6lTN45MnBKrPUFRio2Fy_Z5bKMqlStkXmRuD43_Lmf4HuFkjzNlErGrcL1_B7sxpNyipMHpi_5Wigi3VF4myb4HUBnjthDnl77gajC8KcVigApG-EA5yt1brqGjnBR3cdrRguwQOtgP6Jip3sBwlhMFeEMtharZ21_1XrXDt0yGRzwJKvvScBvBVJ4dn3y1pq2zfkIRKmsn',
+    'prefill_contact_point': '',
+    'prefill_source': '',
+    'prefill_type': '',
+    'first_prefill_source': '',
+    'first_prefill_type': '',
+    'had_cp_prefilled': 'false',
+    'had_password_prefilled': 'false',
+    'ab_test_data': 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AA/AAAAAAAAAD',
+    'encpass': '#PWD_BROWSER:5:1720182088:AatQAEqugrybl9pJqyshLY1ywE3xNdW1FiTD9sRYNkZTwD8Mfg/WZignkEm3UTu+7362qkjwkRNXjOI/KceumvZgvDliyzhk6dYt89h/pSLW33+5Wf41e0J+rV43OseIyKJszid5MLSxcZw=',
+}
+
+response = requests.post(
+    'https://web.facebook.com/login/device-based/regular/login/',
+    params=params,
+    cookies=cookies,
+    headers=headers,
+    data=data,
+)
 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
 'authority': 'mbasic.facebook.com',
 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
