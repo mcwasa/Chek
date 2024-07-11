@@ -259,20 +259,15 @@ def xyteee():
 #---------------------[Main-Menu]---------------------#
 def rmain():
     print(" [1] crack from File")
-    print(" [3] crack from email")
-    print(" [4] crack from searching \x1b[1;91m(Off)\x1b[1;97m")
+    print(" [2] crack from email")
     print(" [0] exit program");print(led)
     xytee = input(f' Select Option : ')
     if xytee in ["1","01"]:
         file()
     elif xytee in ["2","02"]:
          rdm()
-    elif xytee in ["3","03"]:
          mail()
-    elif xytee in ["4","04"]:
          print('Wait it will launch very soon')
-    elif xytee in ["5","05"]:
-     os.system("xdg-open https://wa.me/+8801926890544");rmain()
     elif xytee in ["0","00"]:
      print(f' Exited Xyteee Terminal ');os.system("xdg-open https://www.facebook.com/profile.php?id=61554748685443");time.sleep(3);os.system('xdg-open https://www.facebook.com/alphaxd.69');exit()
     else:
