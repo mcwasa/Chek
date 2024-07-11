@@ -77,7 +77,7 @@ for memk in range(10000):
 for xd in range(10000):
     rr = random.randint; rc = random.choice
     gt = ['N4LEFH','TQ2A','QQ1B','PQ1A','SQ3A','RD1B','LDK2WU','SD2A','AB03E','Z367Q','R8638','C886H'] 
-    strvgt = f"Mozilla/5.0 (Linux; U; Android 2.3.6; hr-hr; SAMSUNG GT-S6500D/S6500DXXMH1 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    strvgt = f"Mozilla/5.0 (Linux; Android 12; SM-G973U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     uateddy = random.choice([strvgt])
     ugen.append(uateddy)
     
@@ -243,17 +243,6 @@ warna = random.choice(my_color)
 ###----------[ CONVERT LINE ]----------###
 led = f'{P}-----------------------------------------------------'
 dt= f" {K}Don't minimize termux during cloning\n{P}-----------------------------------------------------"
-
-###----------[ BANNER MENUH ]----------###
-fst=f' kawsar > akash > kaung > biraj > jackson'
-lst=f' ahmed > ali > islam > myat > thapa > jeneral'
-limitt=f' Example -> 2000 > 4000 > 8000 > 20000'
-fast=f' BD -> 01703 > 01881 > 01927 > 01636 > 01368\n NP -> 984576 > 974523 > 986508 > 984117 > 986023\n PK -> 030671 > 031592 > 033585 > 034536\n IN -> +91637792 > +91630438 > +91955178\n ID -> +6282269 > +6285359 > +6283105'
-medium=f' BD -> 0170 > 0188 > 0192 > 0163 > 0136\n NP -> 98451 > 97458 > 98657 > 98412 > 98604\n PK -> 03062 > 03157 > 03358 > 03454\n ID -> +628226 > +628535 > +628310\n IN -> +9163797 > +9163074 > +9195516'
-slow=f' BD -> 017 > 018 > 019 > 016 > 013 > 014\n NP -> 9845 > 9745 > 9865 > 9841 > 9860\n PK -> 0306 > 0315 > 0335 > 0345\n ID -> +62822 > +62853 > +62831\n IN -> +916377 > +916304 > +919551'
-mtd,cp_xdx,cokix=[],[],[]
-def clear():
- os.system('clear')
 #---------------------[Banner]---------------------#
 def xyteee():
     #os.system('clear')
