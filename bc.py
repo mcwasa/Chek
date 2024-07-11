@@ -134,7 +134,7 @@ for xd in range(10000):
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.66 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/376.0.0.7.103;]'
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.66 Mobile Safari/537.36[FB_IAB/FB4A;FBAV/472.0.0.45.79;]'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
@@ -144,7 +144,7 @@ for xd in range(10000):
 	ugen.append(uaku)
 
 ###----------[ USER AGENT 2 ]----------###	
-	aa='Mozilla/5.0 (Linux; Android'
+	aa='Mozilla/5.0 (Linux; Android 12'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c='SM-X906C Build/QP1A.190711.020; wv)'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -200,7 +200,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/403.0.0.27.81;]'
+	l='Version/4.0 Chrome/126.0.6478.170 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/472.0.0.45.79;]'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
@@ -215,7 +215,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/403.0.0.27.81;]'
+	l='Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB4A;FBAV/465.0.0.63.83;]'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
@@ -230,7 +230,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/402.1.0.24.84;]'
+	l='Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36 [FB4A;FBAV/472.0.0.45.79;]'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
@@ -245,7 +245,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/403.0.0.27.81;]'
+	l='Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB4A;FBAV/471.0.0.35.80;]'
 	uaku2=f'{a} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
@@ -397,7 +397,7 @@ for x in range(10):
 	j='AppleWebKit/537.36 (KHTML, like Gecko)'
 	k=random.randrange(1, 9)
 	l=random.randrange(1, 9)
-	m='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/377.0.0.22.107;]'
+	m='Mobile Safari/537.36 [FB_IAB/FB4A;FB4A;FBAV/472.0.0.45.79;]'
 	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 	
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -405,7 +405,7 @@ for x in range(10):
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android 13; RMX3760 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.133 Mobile Safari/537.36'
+	uak=f'Mozilla/5.0 (Linux; Android 13; RMX3760 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Version/4.0 Chrome/126.0.6478.170 Mobile Safari/537.36'
 def uaku():
 	try:
 		ua=open('bbnew.txt','r').read().splitlines()
