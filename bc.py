@@ -258,12 +258,9 @@ def xyteee():
 -----------------------------------------------------""")
 #---------------------[Main-Menu]---------------------#
 def rmain():
-    clear();xyteee()
     print(" [1] crack from File")
-    print(" [2] crack from number")
     print(" [3] crack from email")
     print(" [4] crack from searching \x1b[1;91m(Off)\x1b[1;97m")
-    print(" [5] owner contact")
     print(" [0] exit program");print(led)
     xytee = input(f' Select Option : ')
     if xytee in ["1","01"]:
