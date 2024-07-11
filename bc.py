@@ -592,8 +592,7 @@ def md2(idf,pwv):
       open('http.txt','w').write(proxs)
       nip = rc(proxs)
       proxs = {'http': 'socks4://'+nip}
-      ses.headers.update{
-    'authority': 'web.facebook.com',
+      ses.headers.update{'authority': 'web.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
