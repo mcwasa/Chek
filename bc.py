@@ -240,9 +240,6 @@ BA = '\x1b[1;100m'
 my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
-###----------[ CONVERT LINE ]----------###
-led = f'{P}-----------------------------------------------------'
-dt= f" {K}Don't minimize termux during cloning\n{P}-----------------------------------------------------"
 #---------------------[Banner]---------------------#
 def xyteee():
     #os.system('clear')
