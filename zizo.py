@@ -41,6 +41,7 @@ ugen=[]
 ugen2=[]
 ###----------[ GET PROXY ]----------###
 redmi=[]
+redmi=[]
 try:
  print('')
  uno = ses.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
@@ -51,8 +52,8 @@ for x in range(1000):
  rc = random.choice
  A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
  B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
- C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
- D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
+ C = f'(KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116{str(rr(1111,9999))}.136 Mobile Safari'
+ D = f'/537.36 MiuiBrowser/13.6.0.5-gn{str(rr(11111,99999))}AP'
  se = f'{A}{B}{C}{D}'
  if se in redmi:pass
  else:redmi.append(se)
