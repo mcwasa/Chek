@@ -66,11 +66,11 @@ proxsi=open('socksku.txt','r').read().splitlines()
 for memk in range(10000):
     rr = random.randint; rc = random.choice
     gt = ['N4LEFH','TQ2A','QQ1B','PQ1A','SQ3A','RD1B','LDK2WU','SD2A','AB03E','Z367Q','R8638','C886H'] 
-    strt = f'viabrowser;Safary-Mozilla/5.0 (Windows NT 10.0 .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,500))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/{str(rr(10,400))}.0.{str(rr(111,6666))}.{str(rr(10,400))}'
-    ical4 = f"viabrowser;Safary-Mozilla/5.0 (Windows NT 10.0 .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,140))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/6.0.2979.18"
-    fa5 = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
-    fan = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
-    fina = f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,300))}.0.0.0 Mobile Safari/537.36'
+    strt = f'viabrowser;Safary-Mozilla/5.0 (SMART-TV; Linux; Smart TV .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,500))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/{str(rr(10,400))}.0.{str(rr(111,6666))}.{str(rr(10,400))}'
+    ical4 = f"viabrowser;Safary-Mozilla/5.0 (SMART-TV; Linux; Tizen 7.0 .{str(rr(1,20))}; WOW64){str(rc(gt))})Applewebkit/537.36 (KHTML, like Gecko) Chrome/{str(rr(50,140))}.0.{str(rr(3990,5001))}.{str(rr(20,170))} Safari/537.36 Vivaldi/6.0.2979.18"
+    fa5 = f'Mozilla/5.0 (Linux; Android 6.0.1; SCL24) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.1 Chrome/79.0.3945.136 Mobile Safari/537.36'
+    fan = f'Mozilla/5.0 (Linux; Android 6.0.1; SC-01G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
+    fina = f'Mozilla/5.0 (Linux; Android 5.0.1; SC-01G Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36'
     uaku2 = random.choice([strt,ical4,fa5,fan,fina])
     ugen.append(uaku2)
 ##----------[ USER AGENT 1 ]----------###
@@ -108,8 +108,8 @@ for t in range(10000):
 	zax3=f'Opera/9.80 (J2ME/MIDP; Opera Mini/{a}.{d}/{z}.{e}; U; {i}) Presto/2.12.423 Version/12.16'
 	#zax4=f'{opera} Opera/9.80 (J2ME/MIDP; Opera Mini/{a}.{d}/{z}.{e}; U; {i}) Presto/2.12.423 Version/12.16'
 	zax5=f'Mozilla/5.0 (Linux; Android 9; HP Chromebook x360 11 G1 EE Build/R124-15823.40.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Safari/537.36 newsbreak/22.34.0'
-	zax6 = f'Mozilla/5.0 (X11; CrOS armv7l 4537.56.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
-	zax7=f'Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/431.0.0.30.108;]'
+	zax6 = f'Mozilla/5.0 (SMART-TV; Linux; Smart TV) AppleWebKit/537.36 (KHTML, like Gecko) Thano/3.0 Chrome/125.0.6422.186 Safari/537.36'
+	zax7=f'Mozilla/5.0 (Linux; Android 5.0.1; SCL24 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36[FBAN/EMA;FBLC/vi_VN;FBAV/407.0.0.12.116;]'
 	main_ua = random.choice([zax5,zax2,zax6,zax3,zax7])
 	ugen.append(main_ua)
 for xd in range(10000):
