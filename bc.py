@@ -603,7 +603,7 @@ def md1(idf,pwv):
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
       heade= {'authority': 'free.facebook.com',
-      "Host": "free.facebook.com",
+      "Host": "m.facebook.com",
       "content-length": f"{len(str(dataa))}",
       "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(p.text)).group(1),
       "origin": "https://free.facebook.com",
