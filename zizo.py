@@ -75,9 +75,9 @@ for memk in range(10000):
     uaku2 = random.choice([strt,ical4,fa5,fan,fina])
     ugen.append(uaku2)
 ##----------[ USER AGENT 1 ]----------###
-get_ua = random.choice("https://github.com/mcwasa/USER-AGENT/blob/main/Uaa.txt").text.splitlines()
+get_ua = random.choice("https://github.com/mcwasa/USER-AGENT/blob/main/Uaa.txt").txt.splitlines()
 ###----------[ USER AGENT 2 ]----------###	
-get_ua = random.choice("https://github.com/mcwasa/USER-AGENT/blob/main/Uaa.txt").text.splitlines()
+get_ua = random.choice("https://github.com/mcwasa/USER-AGENT/blob/main/Uaa.txt").txt.splitlines()
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
