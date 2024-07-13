@@ -619,7 +619,7 @@ def md1(idf,pwv):
       "x-requested-with": "Linux",
       "sec-ch-ua": '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
       "sec-ch-ua-platform": '"Android"',
-      "sec-ch-ua-mobile': "?1",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model': '"CPH2159",
       "sec-ch-ua-platform': '"Android"',
       "sec-ch-ua-platform-version": '"11.0.0"',
