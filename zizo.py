@@ -27,8 +27,6 @@ try:
         from string import *
 except ModuleNotFoundError:
         os.system(f'pip install requests futures==2 > /dev/null')
-except:pass
-if not len(open('/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/models.py','r').readlines())==1034:print('Bypass User')
 ###----------[ GLOBAL NAMA ]----------###
 url = "m.prod.facebook.com"
 id,id2,uid = [],[],[]
