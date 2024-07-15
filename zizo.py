@@ -362,7 +362,6 @@ def convert(cookie):
 	return(str(cok))
 #------------------[ USER-AGENT ]-------------------#
 for xd in range(1000):
-	rc = random.choice
 	ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; SM-G960U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
 	ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; HUAWEI RIO-L01 Build/HuaweiRIO-L01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
 	ugents3 = f"Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a [FBAN/FBIOS;FBBV/12376726;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/7.0.4;FBSS/1; FBCR/;FBID/tablet;FBLC/en_GB;FBOP/1]"
@@ -371,7 +370,6 @@ for xd in range(1000):
 	ugen.append(zaxxy)
 
 for xd in range(10000):
-   rc = random.choice
    win = ["Win64; x64)","WOW64)"]
    samsung = ["SAMSUNG SM-A3560","SAMSUNG SM-R875U","SAMSUNG SM-A356B/A356BXXU1AXBB","SAMSUNG SM-A356E","SAMSUNG SM-E546B","SAMSUNG SM-A155F","SAMSUNG SM-A256B","SAMSUNG SM-A256E"]
    ugent1 = f"Mozilla/5.0 (Windows NT 10.0; {str(rc(win))} AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(70,120))}.0.0.0 Safari/537.36"
