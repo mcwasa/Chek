@@ -362,7 +362,6 @@ def convert(cookie):
 	return(str(cok))
 #------------------[ USER-AGENT ]-------------------#
 for xd in range(1000):
-	rr = random.randint
 	rc = random.choice
 	ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; SM-G960U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
 	ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; HUAWEI RIO-L01 Build/HuaweiRIO-L01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
@@ -372,7 +371,6 @@ for xd in range(1000):
 	ugen.append(zaxxy)
 
 for xd in range(10000):
-   rr = random.randint
    rc = random.choice
    win = ["Win64; x64)","WOW64)"]
    samsung = ["SAMSUNG SM-A3560","SAMSUNG SM-R875U","SAMSUNG SM-A356B/A356BXXU1AXBB","SAMSUNG SM-A356E","SAMSUNG SM-E546B","SAMSUNG SM-A155F","SAMSUNG SM-A256B","SAMSUNG SM-A256E"]
