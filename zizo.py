@@ -262,9 +262,6 @@ def md1(idf,pwv):
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-	GETTTTTTTTTTTTTTTTTT
-
-
 import requests
 
 cookies = {
