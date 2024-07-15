@@ -360,42 +360,6 @@ def cek_apk(kuki):
 def convert(cookie):
 	cok = ('sb=%s;datr=%s;c_user=%s;xs=%s;fr=%s'%(cookie['sb'],cookie['datr'],cookie['c_user'],cookie['xs'],cookie['fr']))
 	return(str(cok))
-#------------------[ USER-AGENT ]-------------------#
-for xd in range(1000):
-	ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; SM-G960U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
-	ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; HUAWEI RIO-L01 Build/HuaweiRIO-L01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
-	ugents3 = f"Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a [FBAN/FBIOS;FBBV/12376726;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/7.0.4;FBSS/1; FBCR/;FBID/tablet;FBLC/en_GB;FBOP/1]"
-	ugent4 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; J9210 Build/55.2.A.4.229; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
-	zaxxy = random.choice([ugent1,ugent2,ugents3,ugent4])
-	ugen.append(zaxxy)
-
-for xd in range(10000):
-   win = ["Win64; x64)","WOW64)"]
-   samsung = ["SAMSUNG SM-A3560","SAMSUNG SM-R875U","SAMSUNG SM-A356B/A356BXXU1AXBB","SAMSUNG SM-A356E","SAMSUNG SM-E546B","SAMSUNG SM-A155F","SAMSUNG SM-A256B","SAMSUNG SM-A256E"]
-   ugent1 = f"Mozilla/5.0 (Windows NT 10.0; {str(rc(win))} AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(70,120))}.0.0.0 Safari/537.36"
-   ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,15))}; {str(rc(samsung))}) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/{str(rr(110,130))}.0.{str(rr(3000,5999))}.{str(rr(110,130))} Mobile Safari/537.36"
-   ugent3 = f"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(110,120))}.0.0.0 Mobile Safari/537.36"
-   ugent4 = f"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) QupZilla/1.9.0 Safari/538.1"
-   ugent5 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; Standalone HMD) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/8.5.0.4.24.209184609 SamsungBrowser/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile VR Safari/537.36"
-   ugent6 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; zh-cn; OPPO R9sk Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile Safari/537.36 OppoBrowser/10.5.1.2"
-   ugent7 = f"Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; SM-G9550 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} UWS/2.14.0.9 Mobile Safari/537.36 AliApp(TB/7.9.2) UCBS/2.11.1.1 TTID/10004868@taobao_android_7.9.2 WindVane/8.3.0 1080X2076"
-   ugent8 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; en-US; SM-J810F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} Mobile Safari/537.36"
-   ugent9 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; en-US; HRY-LX1MEB Build/HONORHRY-LX1MEB) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} Mobile Safari/537.36"
-   ugent10 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; zh-cn; M2004J19C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.2.150419"
-   zax = random.choice([ugent1,ugent2,ugent3,ugent4,ugent5,ugent6,ugent7,ugent8,ugent9,ugent10])
-   ugen.append(zax)
-def uaku():
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
 if __name__=='__main__':
 	try:os.mkdir('OK')
