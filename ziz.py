@@ -478,16 +478,16 @@ for xd in range(10000):
    ugen.append(zax)
 def uaku():
 	try:
-		ua=open('user.txt','r').read().splitlines()
+		ua=open('userlinix.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/mcwasa/Chek/blob/main/user.txt').text
+		a=requests.get('https://github.com/mcwasa/Chek/blob/main/userlinix.txt').text
 		ua=open('.user.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.user.txt','r').read().splitlines()
+		ua=open('.userlinix.txt','r').read().splitlines()
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
 if __name__=='__main__':
 	try:os.mkdir('OK')
