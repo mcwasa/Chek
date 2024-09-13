@@ -135,10 +135,10 @@ logo=(f"""\x1b[1;97m
  \x1b[0;92m▪\x1b[0;97m▐█\x1b[0;91m·\x1b[0;97m█▌ ▐█▀\x1b[0;91m·.\x1b[1;97m ▐█▌\x1b[1;91m·\x1b[1;97m▐█▄\x1b[1;91m▄▌▐█\x1b[1;91m▄▄▌▐█▄▄▌ \x1b[1;91m•\033[92m•\x1b[1;93m•\x1b[1;92m Active
  \x1b[0;92m•\x1b[1;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[1;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m none \x1b[1;30m
 \033[38;3;276;131;0;1m-----------------------------------------------------
- OWNER    : XYTEEE-XD
- TELEGRAM : t.me/xyteee
- TOOLS    : \x1b[38;5;208mXYTEEE-XC\x1b[1;97m
- STATUS   : \x1b[38;5;42mPREMIUM\x1b[1;97m
+ OWNER    : ZOUHAIR
+ TELEGRAM : zsalmi
+ TOOLS    : \x1b[38;5;208ZOUHIR-ZS\x1b[1;97m
+ STATUS   : \x1b[38;5;42mPERSONAL\x1b[1;97m
 -----------------------------------------------------""")
 #__________________| MAIN |__________________#
 def menu():
@@ -169,15 +169,7 @@ def menu():
                                         plist.append('firstlast')
                                         plist.append('first123')
                                         plist.append('first12345')
-                                        plist.append('First Last')
-                                        plist.append('first786')
-                                        plist.append('firstlast123')
-                                        plist.append('firstlast786')
-                                        plist.append('firstlast@123')
-                                        plist.append('first@123')
-                                        plist.append('firstlast@12345')
-                                        plist.append('firstlast@#')
-                                        plist.append('first123@#')
+                                        plist.append('first123456')
                                 else:
                                         try:
                                                 clear()
