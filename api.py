@@ -137,7 +137,7 @@ logo=(f"""\x1b[1;97m
 \033[38;3;276;131;0;1m-----------------------------------------------------
  OWNER    : ZOUHAIR
  TELEGRAM : zsalmi
- TOOLS    : \x1b[38;5;208ZOUHIR-ZS\x1b[1;97m
+ TOOLS    : \x1b[38;5;208mZOUHIR-ZS\x1b[1;97m
  STATUS   : \x1b[38;5;42mPERSONAL\x1b[1;97m
 -----------------------------------------------------""")
 #__________________| MAIN |__________________#
@@ -486,7 +486,7 @@ def api3(ids,names,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Dalvik/1.6.0 (Linux; U; Android 11; SM-A310N0 Build/MMB29K) [FBAN/FB4A;FBAV/310.0.0.50.118;FBBV/282018885;FBDM/{density=2'+'.0,width='+'720,height='+'1280};FBLC/it_IT;FBRV/282418117;FBCR/Vodafone;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A310N0;FBSV/11;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                        ua = 'Dalvik/2.1.0 (Linux; U; Android 12; V2217 Build/SP1A.210812.003) [FBAN/FB4A;FBAV/310.0.0.50.118;FBBV/282018885;FBDM/{density=2'+'.0,width='+'720,height='+'1280};FBLC/it_IT;FBRV/282418117;FBCR/Vodafone;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A310N0;FBSV/11;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
