@@ -154,16 +154,15 @@ def Asdel():
     #os.system('clear')
     print(f"""\x1b[1;97m
 
- 🇦​​​​​🇸​​​​​🇩​​​​​🇪​​​​​🇱​​​​​version\033[0;0m\x1b[1;30m 1.2 \x1b[1;30m
+ 🇦​​​​​🇸​​​​​🇩​​​​​🇪​​​​​🇱​​​​​version\033[0;0m\x1b[1;30m pro \x1b[1;30m
 \033[38;3;276;131;0;1m------------------------------------------------
  Author   : ZOUHAI®
  Tools    : \x1b[38;5;208mAsdel\x1b[1;97m
  Status   : personnel
-------------------------------------------------""")
+-------------------------------------------""")
 #---------------------[Main-Menu]---------------------#
 def rmain():
     print(" [1] crack from File")
-    print(" [2] crack from email")
     print(" [0] exit program");print(led)
     xytee = input(f' Select Option : ')
     if xytee in ["1","01"]:
@@ -175,7 +174,7 @@ def rmain():
     elif xytee in ["0","00"]:
      print(f' Exited Asdel Terminal ');os.system("xdg-open https://www.facebook.com/profile.php?id=61554748685443");time.sleep(3);os.system('xdg-open https://www.facebook.com/alphaxd.69');exit()
     else:
-     print(f" Don't Select Wrong Options ");os.system("xdg-open https://t.me/Asdeltools");rmain()
+     print(f" Don't Select Wrong Options ");os.system("xdg-open https://t.me/zsalmi");rmain()
 
 #---------------------[File-Menu]---------------------#
 def file():
