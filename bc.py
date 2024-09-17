@@ -677,7 +677,7 @@ def Slow():
   cokixx=input(f'{P} Cloning Show Cookie ?? y/n {M}:{A} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();xyteee();print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
+  print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
   xc = input(f'{P} Select Method {M}:{A} ')
   for nmbr in range(limit):
     koda = ''.join(random.choice(string.digits) for _ in range(2))
