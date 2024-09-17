@@ -137,6 +137,7 @@ my_color = [
 warna = random.choice(my_color)
 ###----------[ CONVERT LINE ]----------###
 led = f'{P}-----------------------------------------------------'
+dt= f" {K}Don't minimize termux during cloning\n{P}-----------------------------------------------------"
 ###----------[ BANNER MENUH ]----------###
 fst=f' kawsar > akash > kaung > biraj > jackson'
 lst=f' ahmed > ali > islam > myat > thapa > jeneral'
