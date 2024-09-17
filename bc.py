@@ -668,7 +668,6 @@ def Medium():
 #---------------------[Slow-Number]---------------------#
 def Slow():
   user=[]
-  os.system('clear');xyteee();print(dt);print(slow);print(led)
   kode = input(f'{P} Select Code {M}:{A} ');print(led);print(limitt);print(led)
   limit = int(input(f' Crack Limit {M}:{A} '));print(led)
   xd_cp=input(f'{P} Cloning Show cp Account ? y/n {M}:{A} ')
