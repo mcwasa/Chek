@@ -590,7 +590,6 @@ def p4():
 #---------------------[Random]---------------------#
 def rdm():
     os.system("clear")
-    xyteee()
     print(f"{P} [1] Random Cloning {M}({H}Fast{M})")
     print(f"{P} [2] Random Cloning {M}({H}Medium{M})")
     print(f"{P} [3] Random Cloning {M}({H}Slow{M})");print(led)
