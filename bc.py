@@ -687,7 +687,7 @@ def Slow():
   with tred(max_workers=30) as xc_xytee:
     os.system('clear')
     tl = str(len(user))
-    xyteee();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
+    print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
     for guru in user:
       idf = kode+koda+kodb+guru
       pwv = [koda+kodb+guru,koda+kodb+guru[1:],idf,kode+koda+kodb,kode+koda+kodb[1:]] #,'@#@#@#','bangladesh','free fire','i love you']
