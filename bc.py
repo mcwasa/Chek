@@ -492,7 +492,6 @@ def Asdel():
 -------------------------------------------""")
 #---------------------[Main-Menu]---------------------#
 def rmain():
-    clear();xyteee()
     print(" [1] crack from File")
     print(" [2] crack from number")
     print(" [3] crack from email")
