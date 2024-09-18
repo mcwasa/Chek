@@ -802,7 +802,7 @@ def md1(idf,pwv):
       time.sleep(33)
   loop+=1
 #---------------------[Method-2]---------------------#
-def def md1(idf,pwv):
+def md1(idf,pwv):
   global loop,ok,cp
   sys.stdout.write(f'\r{P} [Asdel-M1] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
   sys.stdout.flush()
