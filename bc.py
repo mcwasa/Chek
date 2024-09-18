@@ -566,7 +566,7 @@ def setting():
     clear();p4()
 #---------------------[File-Method]---------------------#
 def p4():
-    os.system("clear");xyteee();print(dt);print(f' Total Dump File -> {H}'+str(len(id)));print(f' \x1b[38;5;208mTurn on & off flight (airplane) mode before use\033[1;37m');print(led)
+    os.system("clear")print(dt);print(f' Total Dump File -> {H}'+str(len(id)));print(f' \x1b[38;5;208mTurn on & off flight (airplane) mode before use\033[1;37m');print(led)
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
