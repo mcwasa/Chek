@@ -310,7 +310,7 @@ def md1(idf,pwv):
       time.sleep(33)
   loop+=1
 #---------------------[Method-2]---------------------#
-def md1(idf,pwv):
+def md2(idf,pwv):
   global loop,ok,cp
   sys.stdout.write(f'\r{P} [Asdel-M2] %s|{H}OK{P}|{GREEN}%s'%(loop,ok)),
   sys.stdout.flush()
