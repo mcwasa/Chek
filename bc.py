@@ -812,7 +812,7 @@ def md2(idf,pwv):
     try:
       nip=random.choice(proxsi)
       proxs= {'http': 'socks4://'+nip}
-      proxs = requests.get('https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt').text
+      proxs = requests.get('https://github.com/mcwasa/Chek/blob/main/http.txt').text
       open('http.txt','w').write(proxs)
       nip = rc(proxs)
       proxs = {'http': 'socks4://'+nip}
