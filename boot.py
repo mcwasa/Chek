@@ -2,7 +2,8 @@ import os
 import requests
 import telebot
 from dotenv import load_dotenv
-تحميل المتغيرات من ملف .env
+
+# تحميل المتغيرات من ملف .env
 
 load_dotenv()
 
