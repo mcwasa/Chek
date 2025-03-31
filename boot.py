@@ -23,7 +23,9 @@ def login():
     return "تم تسجيل الدخول بنجاح" if response.ok else f"فشل في تسجيل الدخول. حالة الاستجابة: {response.status_code}"
 # أمر /start
 
-@bot.message_handler(commands=['start']) def start(message): bot.reply_to(message, "مرحبًا! أرسل /login لتسجيل الدخول للموقع.")
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.reply_to(message, "مرحبًا! أرسل /login لتسجيل الدخول للموقع.")
 
 # أمر /login
 
