@@ -35,8 +35,12 @@ def login_command(message):
     bot.reply_to(message, result)
 # أمر /addcard
 
-@bot.message_handler(commands=['addcard']) def add_card(message): card_data = {"card_number": "123456789"}  # غيّرها حسب الحاجة response = session.post(ADD_CARD_URL, data=card_data) result = "تمت إضافة البطاقة بنجاح!" if response.ok else f"فشل في إضافة البطاقة. حالة الاستجابة: {response.status_code}" bot.reply_to(message, result)
-
+@bot.message_handler(commands=['addcard'])
+def add_card(message):
+    card_data = {"card_number": "123456789"}  # غيّرها حسب الحاجة
+    response = session.post(ADD_CARD_URL, data=card_data)
+    result = "تمت إضافة البطاقة بنجاح!" if response.ok else f"فشل في إضافة البطاقة. حالة الاستجابة: {response.status_code}"
+    bot.reply_to(message, result)
 # تشغيل البوت
 
 bot.polling()
