@@ -17,8 +17,10 @@ session = requests.Session()
 
 # دالة تسجيل الدخول
 
-def login(): data = {"username": USERNAME, "password": PASSWORD} response = session.post(LOGIN_URL, data=data) return "تم تسجيل الدخول بنجاح" if response.ok else f"فشل في تسجيل الدخول. حالة الاستجابة: {response.status_code}"
-
+def login():
+    data = {"username": USERNAME, "password": PASSWORD}
+    response = session.post(LOGIN_URL, data=data)
+    return "تم تسجيل الدخول بنجاح" if response.ok else f"فشل في تسجيل الدخول. حالة الاستجابة: {response.status_code}"
 # أمر /start
 
 @bot.message_handler(commands=['start']) def start(message): bot.reply_to(message, "مرحبًا! أرسل /login لتسجيل الدخول للموقع.")
