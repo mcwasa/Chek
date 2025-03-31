@@ -12,7 +12,8 @@ USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")  
 LOGIN_URL = "https://social.trendatelyoum.com/login"  
 ADD_CARD_URL = "https://social.trendatelyoum.com/MedozTools/addcardamexmulti/"
-bot = telebot.TeleBot(TOKEN) session = requests.Session()
+bot = telebot.TeleBot(TOKEN)
+session = requests.Session()
 
 دالة تسجيل الدخول
 
