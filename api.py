@@ -170,14 +170,6 @@ def menu():
                                         plist.append('first123')
                                         plist.append('first12345')
                                         plist.append('First Last')
-                                        plist.append('first786')
-                                        plist.append('firstlast123')
-                                        plist.append('firstlast786')
-                                        plist.append('firstlast@123')
-                                        plist.append('first@123')
-                                        plist.append('firstlast@12345')
-                                        plist.append('firstlast@#')
-                                        plist.append('first123@#')
                                 else:
                                         try:
                                                 clear()
